@@ -110,6 +110,12 @@ tr:nth-child(1) {
     background-color: #007bff;
     color: white;
 }
+
+.admin_home {
+    text-align: center; 
+    margin-top: 20px;
+}
+
 </style>
 
 <body>
@@ -125,16 +131,11 @@ tr:nth-child(1) {
     if (isset($_SESSION['admin_login'])) {
         ?>
         <div class="right">
-            <a class="btn btn-danger" href="logout.php">LOGOUT</a>
+            <a class="btn btn-outline-danger" href="logout.php">LOGOUT</a>
         </div>
         <?php
     }
     ?>
-
-
-    
-
-
  	<form>
  		<table class="mt-5" align="center" cellspacing="0" cellpadding="10" width="80%">
  			<tr align="center">
@@ -244,8 +245,9 @@ tr:nth-child(1) {
     <?php
     if (isset($_SESSION['admin_login'])) {
         ?>
-        <div>
-            <a class="btn btn-primary" href="admin_home.php">Go to Admin Home Page</a>
+       <div class="admin_home">
+            <br>
+            <a class="btn btn-outline-primary" href="admin_home.php">Go to Admin Home Page</a>
         </div>
         <?php
     }
