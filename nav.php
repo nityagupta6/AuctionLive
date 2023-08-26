@@ -43,7 +43,7 @@
 
 			<a style="color: #FCC85D;" class="navbar-brand" href="index.php">
 				<img style="max-width:50px; margin-top: -7px;" src="logo/auction.svg">&nbsp;
-				Easy Auctions
+				AuctionLive
 			</a>
 			<div align="center">
 				<a class="btn custom-btn-warning" href="new_product.php">Add A Product For Bid</a>

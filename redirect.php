@@ -117,8 +117,7 @@ tr:nth-child(even) {
 								?>
 								<option value="<?php echo $row_c->cid; ?>"><?php echo $row_c->cname;?></option>	
 								<?php	
-								}
-							 								
+								}							
 						}
 						?>
 					</select>
@@ -126,8 +125,6 @@ tr:nth-child(even) {
 			</tr>
 			<tr>
 				<td colspan="2" align="center"><input type="submit" class="btn btn-success" name="update" value="UPDATE"></td>
-					
-				
 	 		</tr>
 		</table>
 	</form>

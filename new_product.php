@@ -27,7 +27,7 @@ if (isset($_REQUEST['insert_product'])) {
 	$query1 = "insert into tbl_product (name, price, description, uid, bidstarttime, bidendtime) values ('$name', '$price', '$description', '$row_c->uid','$starttime','$endtime')";
 
 	$file = $_FILES['img'];
-	print_r($file);
+	// print_r($file);
 
 	$true = false;
 
@@ -48,13 +48,7 @@ if (isset($_REQUEST['insert_product'])) {
 		if (in_array($fileActualExt, $allowed)) {
 			if ($fileError === 0) {
 				if ($fileSize < 1000000) {
-
 					$true = true;
-
-					/*
-						VERIFIES ALL THE NECESSARY CONDITIONS FOR UPLOADING THE FILES
-					*/
-
 				} else {
 					$true = false;
 					$error_upload_size_message = $fileName.", this file is too big, file size should be less then 1 MB";
@@ -113,7 +107,6 @@ if (isset($_REQUEST['insert_product'])) {
 <style>
 body {
 	background-image: url(images/new_product_bg.jpg);
-	background-color: #a29bfe;
 	position: relative;
 }
 .bg-nav {

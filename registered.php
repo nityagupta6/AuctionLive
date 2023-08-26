@@ -14,8 +14,8 @@ body {
 }
 
 .fit-image {
-    max-width: 100%; /* Set maximum width to prevent overflow */
-    max-height: 100vh; /* Set maximum height relative to the viewport height */
+    max-width: 100%; 
+    max-height: 100vh;
     display: block;
     margin: 0 auto; 
   }
@@ -59,9 +59,5 @@ a {
     </td>
   </tr>
 				</table>
-<!-- <form>
-	<h1>You are Successfully Registered!</h1>
-	<p>Go back to <a href="index.php">login</a> page </p>
-</form> -->
 </body>
 </html>
